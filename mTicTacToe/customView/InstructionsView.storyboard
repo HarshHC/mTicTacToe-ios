@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="mouse_font.ttf">
+            <string>MouseMemoirs-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Instructions Controller-->
+        <scene sceneID="hOc-HW-VgC">
+            <objects>
+                <viewController storyboardIdentifier="InstructionsController" id="5wA-uX-81r" customClass="InstructionsController" customModule="mTicTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C9A-bu-a6X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4g-vK-1q2">
+                                <rect key="frame" x="20" y="131" width="374" height="634"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20e-iS-awf">
+                                        <rect key="frame" x="131.5" y="20" width="111" height="35.5"/>
+                                        <fontDescription key="fontDescription" name="MouseMemoirs-Regular" family="Mouse Memoirs" pointSize="31"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WW-Bm-rEy">
+                                        <rect key="frame" x="100" y="579" width="174" height="35"/>
+                                        <fontDescription key="fontDescription" name="MouseMemoirs-Regular" family="Mouse Memoirs" pointSize="20"/>
+                                        <state key="normal" title="Game by Harsh Chandra">
+                                            <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="HCclicked:" destination="5wA-uX-81r" eventType="touchUpInside" id="WeU-yW-dfC"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ol-Zx-jT4">
+                                        <rect key="frame" x="20" y="75.5" width="334" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="MouseMemoirs-Regular" family="Mouse Memoirs" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpi-mS-UYc">
+                                        <rect key="frame" x="339" y="0.0" width="35" height="35"/>
+                                        <color key="backgroundColor" red="1" green="0.51812508869999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="U1e-hb-VGt"/>
+                                            <constraint firstAttribute="height" constant="35" id="r9p-QW-86q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="xClicked:" destination="5wA-uX-81r" eventType="touchUpInside" id="HV7-JY-XKn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="9WW-Bm-rEy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Ol-Zx-jT4" secondAttribute="bottom" constant="30" id="10j-M8-a1M"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="9WW-Bm-rEy" secondAttribute="trailing" constant="100" id="5dp-kF-sPB"/>
+                                    <constraint firstAttribute="trailing" secondItem="fpi-mS-UYc" secondAttribute="trailing" id="BhF-1t-66W"/>
+                                    <constraint firstItem="fpi-mS-UYc" firstAttribute="top" secondItem="q4g-vK-1q2" secondAttribute="top" id="ICb-J2-Q06"/>
+                                    <constraint firstItem="9WW-Bm-rEy" firstAttribute="leading" relation="lessThanOrEqual" secondItem="q4g-vK-1q2" secondAttribute="leading" constant="100" id="M6b-4a-PhS"/>
+                                    <constraint firstItem="6Ol-Zx-jT4" firstAttribute="top" secondItem="20e-iS-awf" secondAttribute="bottom" constant="20" id="Rnu-ri-EdU"/>
+                                    <constraint firstItem="6Ol-Zx-jT4" firstAttribute="leading" secondItem="q4g-vK-1q2" secondAttribute="leading" constant="20" id="UFE-DM-bUq"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Ol-Zx-jT4" secondAttribute="trailing" constant="20" id="UrM-Ez-kpw"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="ZQg-ss-bhb"/>
+                                    <constraint firstItem="20e-iS-awf" firstAttribute="top" secondItem="q4g-vK-1q2" secondAttribute="top" constant="20" id="jP6-ad-9AW"/>
+                                    <constraint firstItem="20e-iS-awf" firstAttribute="centerX" secondItem="6Ol-Zx-jT4" secondAttribute="centerX" id="jmz-1m-uKS"/>
+                                    <constraint firstAttribute="bottom" secondItem="9WW-Bm-rEy" secondAttribute="bottom" constant="20" id="lhe-00-yyp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="q4g-vK-1q2" firstAttribute="centerX" secondItem="C9A-bu-a6X" secondAttribute="centerX" id="D7B-FA-nll"/>
+                            <constraint firstItem="q4g-vK-1q2" firstAttribute="top" secondItem="Qm0-La-ggk" secondAttribute="top" constant="87" id="Hsb-9y-nbR"/>
+                            <constraint firstItem="q4g-vK-1q2" firstAttribute="leading" secondItem="Qm0-La-ggk" secondAttribute="leading" constant="20" id="ZNa-xe-L9r"/>
+                            <constraint firstItem="Qm0-La-ggk" firstAttribute="trailing" secondItem="q4g-vK-1q2" secondAttribute="trailing" constant="20" id="a5V-1b-vRe"/>
+                            <constraint firstItem="q4g-vK-1q2" firstAttribute="centerY" secondItem="C9A-bu-a6X" secondAttribute="centerY" id="dGm-mn-OQ1"/>
+                            <constraint firstItem="q4g-vK-1q2" firstAttribute="centerY" secondItem="C9A-bu-a6X" secondAttribute="centerY" id="xRf-hw-Rsz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qm0-La-ggk"/>
+                    </view>
+                    <connections>
+                        <outlet property="main" destination="q4g-vK-1q2" id="Yze-J9-fSH"/>
+                        <outlet property="mainText" destination="6Ol-Zx-jT4" id="Kly-cO-9dw"/>
+                        <outlet property="xButton" destination="fpi-mS-UYc" id="1Lc-qn-09j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jFf-tr-roh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-310.14492753623193" y="-380.35714285714283"/>
+        </scene>
+    </scenes>
+</document>

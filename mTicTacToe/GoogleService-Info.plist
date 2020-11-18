@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>468035603301-si52p85p6oj0rod2p6ks0vg24kjkqk8e.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.468035603301-si52p85p6oj0rod2p6ks0vg24kjkqk8e</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBjOty3xkcUQOopvlpUGBkIVi0GPncBfYQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>468035603301</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>hc.apps.mTicTacToe</string>
+	<key>PROJECT_ID</key>
+	<string>mapstest-1526137790413</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mapstest-1526137790413.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:468035603301:ios:5ba4bfdd83af8baf74ef8c</string>
+	<key>DATABASE_URL</key>
+	<string>https://mapstest-1526137790413.firebaseio.com</string>
+</dict>
+</plist>
